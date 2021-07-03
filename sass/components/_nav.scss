@@ -200,6 +200,10 @@
     justify-content: flex-start;
   }
 
+  .menu-container {
+    display: none;
+  }
+
   .nav__list {
     display: flex;
     list-style: none;
