@@ -38,11 +38,18 @@
           </ul>
           <!-- mobile menu -->
           <div class="nav__mobilemenu">
-            <svg class="nav__icon">
-              <use href="./images/icons.svg#mmenu"></use>
-            </svg>
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="nav__icon">
+                <use href="./images/icons.svg#mmenu"></use>
+              </svg>
+            </button>
           </div>
         </nav>
+        <!-- top nav contact block -->
         <ul class="contactbem">
           <li class="contactbem__item">
             <a
@@ -105,15 +112,35 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="
-                        ./images/technocrack.jpg   1x,
-                        ./images/technocrack2x.jpg 2x
-                      "
-                      src="./images/technocrack.jpg"
-                      class="galery__image"
-                      alt="Технокряк"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/technocrack370.jpg 1x,
+                          ./images/technocrack740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/technocrack354.jpg 1x,
+                          ./images/technocrack708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/technocrack.jpg   1x,
+                          ./images/technocrack2x.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/technocrack.jpg"
+                        class="galery__image"
+                        alt="Технокряк"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -134,15 +161,34 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="
-                        ./images/neworlean.jpg   1x,
-                        ./images/neworlean2x.jpg 2x
-                      "
-                      src="./images/neworlean.jpg"
-                      class="galery__image"
-                      alt="Постер New Orlean vs Golden Star"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/neworlean370.jpg 1x,
+                          ./images/neworlean740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/neworlean354.jpg 1x,
+                          ./images/neworlean708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/neworlean.jpg   1x,
+                          ./images/neworlean2x.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/neworlean.jpg"
+                        class="galery__image"
+                        alt="Постер New Orlean vs Golden Star"
+                      />
+                    </picture>
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -163,15 +209,34 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="
-                        ./images/seafood.jpg   1x,
-                        ./images/seafood2x.jpg 2x
-                      "
-                      src="./images/seafood.jpg"
-                      class="galery__image"
-                      alt="Ресторан Seafood"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/seafood370.jpg 1x,
+                          ./images/seafood740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/seafood354.jpg 1x,
+                          ./images/seafood708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/seafood.jpg   1x,
+                          ./images/seafood2x.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/seafood.jpg"
+                        class="galery__image"
+                        alt="Ресторан Seafood"
+                      />
+                    </picture>
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -190,12 +255,32 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="./images/prime.jpg 1x, ./images/prime2x.jpg 2x"
-                      src="./images/prime.jpg"
-                      class="galery__image"
-                      alt="Проект Prime"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/prime370.jpg 1x,
+                          ./images/prime740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/prime354.jpg 1x,
+                          ./images/prime708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="./images/prime.jpg 1x, ./images/prime2x.jpg 2x"
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/prime.jpg"
+                        class="galery__image"
+                        alt="Проект Prime"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -214,12 +299,32 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="./images/boxes.jpg 1x, ./images/boxes2x.jpg 2x"
-                      src="./images/boxes.jpg"
-                      class="galery__image"
-                      alt="Проект Boxes"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/boxes370.jpg 1x,
+                          ./images/boxes740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/boxes354.jpg 1x,
+                          ./images/boxes708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="./images/boxes.jpg 1x, ./images/boxes2x.jpg 2x"
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/boxes.jpg"
+                        class="galery__image"
+                        alt="Проект Boxes"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -238,15 +343,35 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="
-                        ./images/inspiration.jpg   1x,
-                        ./images/inspiration2x.jpg 2x
-                      "
-                      src="./images/inspiration.jpg"
-                      class="galery__image"
-                      alt="Inspiration has no Borders"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/inspiration370.jpg 1x,
+                          ./images/inspiration740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/inspiration354.jpg 1x,
+                          ./images/inspiration708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/inspiration.jpg   1x,
+                          ./images/inspiration2x.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/inspiration.jpg"
+                        class="galery__image"
+                        alt="Inspiration has no Borders"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -265,15 +390,35 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="
-                        ./images/limitededition.jpg   1x,
-                        ./images/limitededition2x.jpg 2x
-                      "
-                      src="./images/limitededition.jpg"
-                      class="galery__image"
-                      alt="Издание Limited Edition"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/limitededition370.jpg 1x,
+                          ./images/limitededition740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/limitededition354.jpg 1x,
+                          ./images/limitededition708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/limitededition.jpg   1x,
+                          ./images/limitededition2x.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/limitededition.jpg"
+                        class="galery__image"
+                        alt="Издание Limited Edition"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -292,12 +437,26 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="./images/lab.jpg 1x, ./images/lab2x.jpg 2x"
-                      src="./images/lab.jpg"
-                      class="galery__image"
-                      alt="Проект LAB"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/lab370.jpg 1x, ./images/lab740.jpg 2x"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="./images/lab354.jpg 1x, ./images/lab708.jpg 2x"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="./images/lab.jpg 1x, ./images/lab2x.jpg 2x"
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/lab.jpg"
+                        class="galery__image"
+                        alt="Проект LAB"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -316,15 +475,35 @@
               <li class="galery__item">
                 <a href="" class="galery__link">
                   <div class="galery__overlay">
-                    <img
-                      srcset="
-                        ./images/growingbusiness.jpg   1x,
-                        ./images/growingbusiness2x.jpg 2x
-                      "
-                      src="./images/growingbusiness.jpg"
-                      class="galery__image"
-                      alt="Growing Business"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/growingbusiness370.jpg 1x,
+                          ./images/growingbusiness740.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/growingbusiness354.jpg 1x,
+                          ./images/growingbusiness708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/growingbusiness.jpg   1x,
+                          ./images/growingbusiness2x.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                      />
+                      <img
+                        src="./images/growingbusiness.jpg"
+                        class="galery__image"
+                        alt="Growing Business"
+                      />
+                    </picture>
+
                     <div class="galery__thumb">
                       <p class="galery__overlay--text">
                         Технокряк это современная площадка распространения
@@ -433,5 +612,74 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="nav__icon">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__mobile nav__link--active">
+              Студия
+            </a>
+          </li>
+          <li class="nav__item nav__item--rightmargin">
+            <a
+              href="./portfolio.html"
+              class="nav__mobile nav__mobile--padding nav__link--active"
+              >Портфолио</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__mobile nav__link--active">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav__bottom">
+        <!-- mobile contact -->
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link--mini link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <!-- mobile-media -->
+        <ul class="mobile-media list">
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link link">Instagram</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link link">Twitter</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link link">Facebook</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

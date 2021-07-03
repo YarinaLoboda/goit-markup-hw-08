@@ -18,18 +18,21 @@
 
 @media screen and (min-width: $tablet-size) {
   .header {
-    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
   }
 
   .header__container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 }
 
 @media screen and (min-width: $desktop-size) {
   .header {
+    display: block;
     max-width: 1600px;
   }
 

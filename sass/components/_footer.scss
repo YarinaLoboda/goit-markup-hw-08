@@ -1,5 +1,5 @@
 .footer {
-  max-width: 480px;
+  max-width: 100%;
   padding: 60px 15px;
   background-color: $footer-bgc;
   margin: auto;
@@ -163,7 +163,7 @@
 
 @media screen and (min-width: $tablet-size) {
   .footer {
-    max-width: 768px;
+    max-width: 100%;
     padding: 60px 89px 60px 76px;
   }
 
@@ -183,7 +183,7 @@
 
 @media screen and (min-width: $desktop-size) {
   .footer {
-    max-width: 1600px;
+    max-width: 100%;
     padding: 60px 0;
   }
 

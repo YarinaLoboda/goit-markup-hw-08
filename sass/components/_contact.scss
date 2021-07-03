@@ -10,6 +10,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    color: red;
 
     &--bottommargin {
       margin-bottom: 10px;
@@ -33,6 +34,7 @@
     align-items: center;
     text-decoration: none;
     color: $primary-text-color;
+    fill: $primary-text-color;
     transition-property: color, fill;
     transition-duration: $transition-duration;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
