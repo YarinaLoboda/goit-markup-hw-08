@@ -167,11 +167,22 @@
 }
 
 .mobile-nav__bottom {
-  margin-right: 40px;
+  margin-right: 15px;
 }
 
-.mobile-media {
-  display: flex;
+.mobile-media__item {
+  display: inline-block;
+}
+
+.mobile-media__item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 22px;
+  border: 1px solid transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: bottom;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .mobile-media__link {
@@ -181,16 +192,6 @@
   letter-spacing: 0.02em;
   text-align: left;
   color: $accent-text-color;
-}
-
-.mobile-media__item:not(:last-child)::after {
-  content: '\007C';
-  color: rgba(33, 33, 33, 0.2);
-  padding-left: 10px;
-}
-
-.mobile-media__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 @media screen and (min-width: $tablet-size) {
