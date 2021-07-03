@@ -1,0 +1,24 @@
+.portfolio {
+  max-width: 480px;
+  padding: 60px 15px;
+  margin: auto;
+}
+
+.portfolio__container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .portfolio {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .portfolio {
+    max-width: 1170px;
+    padding: 94px 0;
+  }
+}

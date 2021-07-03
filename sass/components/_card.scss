@@ -1,0 +1,41 @@
+.card {
+  padding: 20px 24px;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #eeeeee;
+}
+
+.card__title {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $alt-text-color;
+
+  &--hide {
+    @extend .card__title;
+    display: none;
+  }
+}
+
+.card__discription {
+  padding: 0;
+  margin: 0;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .card__title--hide {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .card__title--hide {
+    display: none;
+  }
+}

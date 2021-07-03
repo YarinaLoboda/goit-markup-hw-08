@@ -1,0 +1,123 @@
+.galery {
+  text-align: left;
+  margin: 0;
+}
+
+.galery__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.galery__item {
+  transition-property: box-shadow;
+  transition-duration: $transition-duration;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.galery__link {
+  text-decoration: none;
+}
+
+.galery__overlay {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    pointer-events: none;
+  }
+
+  .galery__item:hover &::before {
+    transform: translateY(-100%);
+    transition: transform $transition-duration cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+}
+
+.galery__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.galery__thumb {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  padding: 63px 24px;
+
+  .galery__item:hover & {
+    transform: translateY(-100%);
+    transition: transform $transition-duration cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+}
+
+.galery__overlay--text {
+  display: inline-block;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .galery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: calc(-1 * #{$galery-gap});
+    margin-top: calc(-1 * #{$galery-gap});
+  }
+
+  .galery__item {
+    flex-basis: calc(100% / 2 - #{$galery-gap});
+    margin-left: $galery-gap;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .galery__image {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .galery__item {
+    flex-basis: calc(100% / 3 - #{$galery-gap});
+  }
+
+  .galery__item {
+    margin-top: $galery-gap;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .galery__image {
+    width: 370px;
+  }
+}

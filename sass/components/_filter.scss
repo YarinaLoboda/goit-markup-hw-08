@@ -1,0 +1,77 @@
+.filter {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.filter__list {
+  display: flex;
+  @extend %list;
+  flex-wrap: wrap;
+}
+
+.filter__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.filter__button {
+  display: inline-block;
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  color: $alt-text-color;
+  transition-property: background-color, color;
+  transition-duration: $transition-duration;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.test {
+  background-color: red;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .filter {
+    margin-bottom: 60px;
+  }
+
+  .filter__list {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .filter__item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
